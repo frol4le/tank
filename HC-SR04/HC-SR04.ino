@@ -1,7 +1,6 @@
-const int trigPin = 15;  //D4
-const int echoPin = 0;  //D3
-
-
+const int trigPin = 15;  //D10
+const int echoPin = 0;  //D8
+uint32_t myTimer1;
 long duration;
 int distance=0;
 int distance1=0;
@@ -13,6 +12,7 @@ void setup() {
 }
 
 void loop() {
+  if (millis() - myTimer1 >= 50) {
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
     
@@ -26,5 +26,5 @@ void loop() {
       Serial.println(distance);
       distance1=distance;   
     }   
-    delay(50);
+   }
 }
