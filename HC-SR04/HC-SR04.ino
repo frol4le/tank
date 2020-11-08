@@ -1,5 +1,5 @@
-const int trigPin = 15;  //D4
-const int echoPin = 0;  //D3
+const int trigPin = 15;  //D10
+const int echoPin = 0;  //D8
 uint32_t myTimer1;
 long duration;
 int distance=0;
@@ -21,7 +21,7 @@ void loop() {
     
     duration = pulseIn(echoPin, HIGH);
     distance= duration*0.034/2;
-    if(distance-distance1<300 && distance!=distance1){
+    if(distance-distance1<300 && distance!=distance1 && distance!=0){
       Serial.print("Distance: ");
       Serial.println(distance);
       distance1=distance;   
