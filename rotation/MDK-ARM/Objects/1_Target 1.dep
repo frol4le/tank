@@ -1,3 +1,0 @@
-Dependencies for Project '1', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 6140001::V6.14.1::ARMCLANG
-F (.\main.c)(0x5F993067)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -IC:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include-ID:/STM/Keil/ARM/CMSIS/Include-D__UVISION_VERSION="532" -DSTM32F051x8-o ./objects/main.o -MD)
