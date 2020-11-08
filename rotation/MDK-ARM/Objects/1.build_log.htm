@@ -1,0 +1,127 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ffd user, ds, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.32.0.0
+Toolchain Path:  D:\STM\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14.1
+Assembler:       Armasm.exe V6.14.1
+Linker/Locator:  ArmLink.exe V6.14.1
+Library Manager: ArmAr.exe V6.14.1
+Hex Converter:   FromElf.exe V6.14.1
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+D:\STM\Project\le\fk\rotation\MDK-ARM\1.uvprojx
+Project File Date:  10/28/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14.1', folder: 'D:\STM\Keil\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+^
+main.c(1): error: a parameter list without types is only allowed in a function definition
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+                       ^
+main.c(2): warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+^
+main.c(2): error: a parameter list without types is only allowed in a function definition
+RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+                       ^
+main.c(3): error: unknown type name 'GPIO_InitTypeDef'
+GPIO_InitTypeDef Init_PORTB;
+^
+main.c(5): error: unknown type name 'Init_PORTB'
+Init_PORTB.GPIO_Pin = GPIO_Pin_6;
+^
+main.c(5): error: expected identifier or '('
+Init_PORTB.GPIO_Pin = GPIO_Pin_6;
+          ^
+main.c(6): error: unknown type name 'Init_PORTB'
+Init_PORTB.GPIO_Speed = GPIO_Speed_10MHz;
+^
+main.c(6): error: expected identifier or '('
+Init_PORTB.GPIO_Speed = GPIO_Speed_10MHz;
+          ^
+main.c(7): error: unknown type name 'Init_PORTB'
+Init_PORTB.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+^
+main.c(7): error: expected identifier or '('
+Init_PORTB.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+          ^
+main.c(8): error: expected identifier
+GPIO_Init(GPIOB, &Init_PORTB);
+                 ^
+main.c(8): warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+GPIO_Init(GPIOB, &Init_PORTB);
+^
+main.c(8): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+GPIO_Init(GPIOB, &Init_PORTB);
+         ^
+                            void
+main.c(10): error: unknown type name 'Init_PORTB'
+Init_PORTB.GPIO_Pin = GPIO_Pin_7;
+^
+main.c(10): error: expected identifier or '('
+Init_PORTB.GPIO_Pin = GPIO_Pin_7;
+          ^
+main.c(11): error: unknown type name 'Init_PORTB'
+Init_PORTB.GPIO_Speed = GPIO_Speed_10MHz;
+^
+main.c(11): error: expected identifier or '('
+Init_PORTB.GPIO_Speed = GPIO_Speed_10MHz;
+          ^
+main.c(12): error: unknown type name 'Init_PORTB'
+Init_PORTB.GPIO_Mode = GPIO_Mode_Out_PP;
+^
+main.c(12): error: expected identifier or '('
+Init_PORTB.GPIO_Mode = GPIO_Mode_Out_PP;
+          ^
+main.c(13): error: expected identifier
+GPIO_Init(GPIOB, &Init_PORTB);
+                 ^
+main.c(13): warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+GPIO_Init(GPIOB, &Init_PORTB);
+^
+main.c(13): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+GPIO_Init(GPIOB, &Init_PORTB);
+         ^
+                            void
+main.c(14): error: unknown type name 'RCC_ClocksTypeDef'
+RCC_ClocksTypeDef RCC_ClocksStatus;
+^
+main.c(15): error: expected parameter declarator
+RCC_GetClocksFreq(&RCC_ClocksStatus);
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+6 warnings and 20 errors generated.
+compiling main.c...
+".\Objects\1.axf" - 19 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\user\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
